@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful - AuraFlow</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #16161f;
+            --border: #2a2a3a;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --accent: #6c63ff;
+            --gradient-1: linear-gradient(135deg, #6c63ff 0%, #4a42d4 100%);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 24px;
+        }
+        .box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 60px 40px;
+            max-width: 480px;
+            width: 100%;
+        }
+        .icon {
+            width: 72px;
+            height: 72px;
+            background: rgba(0, 214, 143, 0.15);
+            color: #00d68f;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 24px;
+        }
+        h1 { font-size: 1.6rem; margin-bottom: 12px; }
+        p { color: var(--text-secondary); margin-bottom: 28px; line-height: 1.7; }
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: var(--gradient-1);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+        .footer {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="box">
+        <div class="icon">&#10003;</div>
+        <h1>Payment Successful</h1>
+        <p>Thank you for subscribing to AuraFlow. Your account is being provisioned and you will receive access credentials via email within 5 minutes.</p>
+        <a href="index.html" class="btn">Return to Home</a>
+        <div class="footer">
+            <p>Questions? Contact <a href="mailto:support@auraflow.io" style="color: var(--accent); text-decoration: none;">support@auraflow.io</a></p>
+        </div>
+    </div>
+</body>
+</html>
